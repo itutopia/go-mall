@@ -1,0 +1,45 @@
+Env: dev  # prod:线上生产环境 、dev:开发环境、test:测试环境
+Port: 8088    # 端口
+LogFile: /Users/junchao_lee/Documents/lijunchao/go_workspace/log/go-mall/logs/go-mall.log   # 日志文件
+ShowSql: false  # 是否打印sql
+
+# 数据库连接
+Mysql:
+  Url: root:admin12345@tcp(localhost:3306)/go-mall?charset=utf8mb4&parseTime=True&loc=Local
+  MaxIdleConns: 50
+  MaxOpenConns: 200
+
+Reids:
+  Url: http://127.0.0.1:6643
+
+# es 配置
+Es:
+  Url: http://127.0.0.1:9200
+  Index: bbsgo_topic_1
+
+# 本地文件上传
+Local:
+  Host: https://st.mlog.club/ # 上传文件域名
+  Path: /data/www/st.mlog.club # 上传目录
+
+# 上传配置
+Uploader:
+  # 启用上传方式
+  Enable: Oss
+  # 阿里云oss配置
+  AliyunOss:
+    Host: 请配置成你自己的
+    Bucket: 请配置成你自己的
+    Endpoint: 请配置成你自己的
+    AccessId: 请配置成你自己的
+    AccessSecret: 请配置成你自己的
+    StyleSplitter: 阿里云oss图片样式分隔符
+    StyleAvatar: 头像图片样式名称
+    StylePreview: 预览图片样式名称
+    StyleSmall: 小图样式名称
+    StyleDetail: 详情图片样式名称
+
+
+
+
+
