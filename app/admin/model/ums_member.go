@@ -19,8 +19,8 @@ type UmsMember struct {
 	Job                   string    `json:"job" gorm:"comment:职业"`
 	PersonalizedSignature string    `json:"personalized_signature" gorm:"comment:个性签名"`
 	SourceType            int       `json:"source_type" gorm:"comment:用户来源"`
-	Integration           int       `json:"integration" gorm:"comment:用户来源"`
-	HistoryIntegration    int       `json:"history_integration" gorm:"comment:用户来源"`
-	Growth                int       `json:"growth" gorm:"comment:用户来源"`
-	Status                int       `json:"status" gorm:"comment:帐号启用状态:0:禁用；1:启用',"`
+	Integration           int       `json:"integration" gorm:"comment:积分"`
+	HistoryIntegration    int       `json:"history_integration" gorm:"comment:历史积分数量"`
+	Growth                int       `json:"growth" gorm:"comment:成长值"`
+	Status                int8      `json:"status" gorm:"comment:帐号启用状态:0:禁用；1:启用',"`
 }
